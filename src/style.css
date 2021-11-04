@@ -1,0 +1,25 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+aside{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    background-color: #555555AA;
+    padding: 5px;
+    border-radius: 5px;
+}

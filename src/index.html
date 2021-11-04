@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="images/icon.png">
+        <title>point-wrapping</title>
+
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        
+        <script src="./algorithms/algorithm.js"></script>
+        <script src="./algorithms/graham-scan.js"></script>
+        <script src="./algorithms/gift-wrapping.js"></script>
+        <script src="./algorithms/quickhull.js"></script>
+        <script src="./script.js"></script>
+    </head>
+
+    <body>
+        <canvas id="canvas"></canvas>
+
+        <aside>
+            algorithm
+            <select id="algorithm" onchange="initAlgorithm()" value="graham-scan">
+                <option value="graham-scan">graham-scan</option>
+                <option value="gift-wrapping">gift-wrapping</option>
+                <option value="quickhull">quickhull</option>
+            </select>
+            
+            speed
+            <input id="speed" type="range" min="0" max="999" />
+            
+            points-amount
+            <input id="points-amount" type="range" min="3" max="100" onchange="randomPoints()" />
+
+            <button onclick="randomPoints()">random</button>
+            <button onclick="reset()">reset</button>
+
+            <button onclick="halt()">halt</button>
+            <button onclick="run()">run</button>
+        </aside>
+    </body>
+</html>
